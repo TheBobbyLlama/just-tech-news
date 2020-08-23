@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 
 router.get('/', (req, res) => {
-	User.findAll({ })
+	Comment.findAll({ })
 	.then(dbUserData => res.json(dbUserData))
 	.catch(err => {
 		console.log(err);
